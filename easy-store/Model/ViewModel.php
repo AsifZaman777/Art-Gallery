@@ -10,7 +10,7 @@ function view2(){
     $conn = connection();
     $sql = oci_parse($conn,"select * from product_discount") ;
     $res = oci_execute($sql);
-    return $sql;
+    return $sql ;
 }
 
 function view3(){
