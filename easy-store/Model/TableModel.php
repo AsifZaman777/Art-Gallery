@@ -39,4 +39,11 @@ function ProductShow(){
      return $sql;
 }
 
+function CustomerShow(){
+    $conn = connection();
+    $sql = oci_parse($conn,"select * from customer") ;
+    $res = oci_execute($sql);
+    return $sql;
+}
+
 ?>

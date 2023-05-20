@@ -175,5 +175,33 @@ include '../Model/TableModel.php';
     ?>
 </table>
 
+
+</table>
+
+<div class="heading-table">
+    <h1>Customers:</h1>
+</div>
+<table border="2">
+    <tr>
+    <th>Customer id</th>
+    <th>First name</th>
+    <th>Last Name</th>
+    <th>Phone Number</th>
+    
+    </tr>
+    <?php
+    $res = CustomerShow();
+    while ($row = oci_fetch_array($res, OCI_RETURN_NULLS+OCI_ASSOC)) {
+        
+        echo '<tr>';
+        foreach ($row as $item) 
+        {
+            echo '<td>'.($item !== null ? htmlentities($item, ENT_QUOTES) : '&nbsp').'</td>';
+        }
+        echo '</tr>';
+        }
+    ?>
+</table>
+
 </body>
 </html>
