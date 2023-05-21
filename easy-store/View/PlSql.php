@@ -17,7 +17,7 @@ include "../Controller/PlSqlCheck.php";
 include '../View/Header.php';
 ?>
 <div class="title">
-    <h1>Procedures and function</h1>
+    <h1>Update Data</h1>
 </div>
 <div class="heading-table">
     <p>Increase employees's salary</p>

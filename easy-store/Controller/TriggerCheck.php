@@ -7,6 +7,7 @@ $data = stripslashes($data);
 $data = htmlspecialchars($data);  
 return $data;  
 }
+
 if (isset($_POST['submit1'])) {
     $pid = $quantity = "";
     
@@ -67,6 +68,5 @@ if (isset($_POST['submit4'])) {
         else{
             echo"trigger mission failed";
         }
-    
 }
 ?>

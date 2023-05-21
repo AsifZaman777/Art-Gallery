@@ -161,7 +161,7 @@ include '../Model/SearchingModel.php';
 </table>
 
 <div class="heading-table">
-    <p>Find those employees whose city same as Farid and Salary same as Mohib.</p>
+    <p>Find those employees whose city same as John and Salary same as Michael.</p>
 </div>
 <table border="2">
     <tr>

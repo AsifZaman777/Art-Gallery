@@ -95,11 +95,12 @@ include '../Model/TriggerModel.php';
     <br><br>
     <input class="submit" type="submit" id="submit4" name="submit4" value="Submit">
 </form>
-<div class="heading-table">
+<div class="heading-table"> 
 
-</table>
+</div>
+
 <div class="heading-table">
-<p>Salary update tracking</p>  
+<p>Salary Track:</p>  
 
 </div>
 

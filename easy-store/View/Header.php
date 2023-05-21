@@ -24,7 +24,7 @@
         <li><a href="../View/Table.php">Data</a></li>
         <li><a href="../View/Searching.php">Search</a></li>
         <li><a href="../View/View.php">View</a></li>
-        <li><a href="../View/PlSql.php">Procedural Function</a></li>
+        <li><a href="../View/PlSql.php">Update Data</a></li>
         <li><a href="../View/Trigger.php">Trigger</a></li>
         <li><a href="../Controller/Logout.php">Logout</a></li>
     </ul>

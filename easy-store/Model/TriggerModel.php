@@ -1,4 +1,4 @@
-<?php  
+<?php
 include '../Model/DBConnection.php';
  function trigger1($quantity,$pid){
     $conn = connection();

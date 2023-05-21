@@ -37,9 +37,7 @@ else{
     $count++;
     
 }
-
-
-       
+ 
         if($count==2){
             $res=Login($email,$pass);
            if($res){
@@ -65,12 +63,6 @@ else{
         }
           
         }
-        
-        
-
-           
-       
-
-
+    
 }
 ?>

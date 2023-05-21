@@ -37,7 +37,7 @@ function problem5(){
 
 function problem6(){
     $conn = connection();
-    $sql = oci_parse($conn,"select e.*,j.*,l.* from employee e,job j,location l where e.job_id=j.job_id and e.loc_id=l.loc_id and l.city=(select l.city from employee e,location l where e.loc_id=l.loc_id and e.e_fname='Farid') and j.job_title=(select j.job_title from employee e,job j where e.job_id=j.job_id and e.e_fname='Mohib')
+    $sql = oci_parse($conn,"select e.*,j.*,l.* from employee e,job j,location l where e.job_id=j.job_id and e.loc_id=l.loc_id and l.city=(select l.city from employee e,location l where e.loc_id=l.loc_id and e.e_fname='John') and j.job_title=(select j.job_title from employee e,job j where e.job_id=j.job_id and e.e_fname='Michael')
         ") ;
     $res = oci_execute($sql);
     return $sql;
