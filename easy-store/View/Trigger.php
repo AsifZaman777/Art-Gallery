@@ -96,31 +96,10 @@ include '../Model/TriggerModel.php';
     <input class="submit" type="submit" id="submit4" name="submit4" value="Submit">
 </form>
 <div class="heading-table">
-<p>emp_dml_log table:</p>  
 
-</div>
-
-<table border="2">
-    <tr>
-    <th>Database User</th>
-    <th>Operation name</th>
-    <th>Operation Date</th>
-    </tr>
-    <?php
-    $res = logShow1();
-    while ($row = oci_fetch_array($res, OCI_RETURN_NULLS+OCI_ASSOC)) {
-        
-        echo '<tr>';
-        foreach ($row as $item) 
-        {
-            echo '<td>'.($item !== null ? htmlentities($item, ENT_QUOTES) : '&nbsp').'</td>';
-        }
-        echo '</tr>';
-        }
-    ?>
 </table>
 <div class="heading-table">
-<p>emp_sal_uplog table:</p>  
+<p>Salary update tracking</p>  
 
 </div>
 
@@ -133,7 +112,7 @@ include '../Model/TriggerModel.php';
     <th>Date</th>
     </tr>
     <?php
-    $res = logShow2();
+    $res = logShow1();
     while ($row = oci_fetch_array($res, OCI_RETURN_NULLS+OCI_ASSOC)) {
         
         echo '<tr>';

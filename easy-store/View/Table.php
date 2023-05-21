@@ -199,9 +199,63 @@ include '../Model/TableModel.php';
             echo '<td>'.($item !== null ? htmlentities($item, ENT_QUOTES) : '&nbsp').'</td>';
         }
         echo '</tr>';
+        }    
+    ?>
+
+</table>
+
+<div class="heading-table">
+    <h1>Supplier:</h1>
+</div>
+<table border="2">
+    <tr>
+    <th>Supplier id</th>
+    <th>Supplier Name</th>
+    <th>Supplier phone</th>
+    <th>Company name</th>
+    <th>Location id</th>
+    
+    </tr>
+    <?php
+    $res = SupplierShow();
+    while ($row = oci_fetch_array($res, OCI_RETURN_NULLS+OCI_ASSOC)) {
+        
+        echo '<tr>';
+        foreach ($row as $item) 
+        {
+            echo '<td>'.($item !== null ? htmlentities($item, ENT_QUOTES) : '&nbsp').'</td>';
         }
+        echo '</tr>';
+        }    
     ?>
 </table>
 
+
+<div class="heading-table">
+    <h1>Purchase:</h1>
+</div>
+<table border="2">
+    <tr>
+    <th>Purchase id</th>
+    <th>Product id</th>
+    <th>Quantity</th>
+    <th>Supplier id</th>
+    <th>Employee id</th>
+    <th>Amount</th>
+    
+    </tr>
+    <?php
+    $res = PurchaseShow();
+    while ($row = oci_fetch_array($res, OCI_RETURN_NULLS+OCI_ASSOC)) {
+        
+        echo '<tr>';
+        foreach ($row as $item) 
+        {
+            echo '<td>'.($item !== null ? htmlentities($item, ENT_QUOTES) : '&nbsp').'</td>';
+        }
+        echo '</tr>';
+        }    
+    ?>
+</table>
 </body>
 </html>

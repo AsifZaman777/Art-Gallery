@@ -25,13 +25,8 @@ include '../Model/DBConnection.php';
     $res = oci_execute($sql);
     return $res;
  }
+
  function logShow1(){
-    $conn = connection();
-    $sql = oci_parse($conn,"select * from emp_dml_log") ;
-    $res = oci_execute($sql);
-    return $sql;
- }
- function logShow2(){
     $conn = connection();
     $sql = oci_parse($conn,"select * from emp_sal_uplog") ;
     $res = oci_execute($sql);

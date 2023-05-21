@@ -6,7 +6,7 @@
     margin-top: 10px;
 }
 .heading-table{
-    background-color: gray;
+    background-color: rgb(200, 74, 74);
     position: sticky;
 }
 .heading-table p{
@@ -20,14 +20,21 @@ table{
     
 }
 th{
-    background-color: greenyellow;
+    background-color: rgb(65, 42, 86);
+    color:antiquewhite
     
 }
 td{
     text-align: center;
 }
+table tr:hover{
+    transition: 0.25s;
+    }
  table tr:hover{
-    background-color: #02FE73;
+    background-color: #10261a;
+    transform: scale(0.9);
+    color: aliceblue;
+    border-radius: 10px;
 }
 
 .form {

@@ -33,6 +33,7 @@ td{
 }
  table tr:hover{
     background-color: #10261a;
-    transform: scale(1.2);
+    transform: scale(0.9);
     color: aliceblue;
+    border-radius: 10px;
 }

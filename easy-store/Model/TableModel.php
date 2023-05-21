@@ -46,4 +46,20 @@ function CustomerShow(){
     return $sql;
 }
 
+function SupplierShow(){
+    $conn = connection();
+    $sql = oci_parse($conn,"select * from supplier") ;
+    $res = oci_execute($sql);
+    return $sql;
+}
+
+function PurchaseShow(){
+    $conn = connection();
+    $sql = oci_parse($conn,"select * from purchase") ;
+    $res = oci_execute($sql);
+    return $sql;
+}
+
+
+
 ?>

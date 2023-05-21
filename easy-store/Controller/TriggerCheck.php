@@ -14,10 +14,10 @@ if (isset($_POST['submit1'])) {
         $quantity = input_data($_POST['quantity']);
         $res = trigger1($quantity,$pid);
         if($res){
-            echo "trigger mission failed";
-        }
-        else{
             echo"trigger mission done";
+        }
+        else{  
+            echo "trigger mission failed";
         }
     }
 

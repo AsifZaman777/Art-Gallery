@@ -28,28 +28,69 @@
 
 .menubar{
     position: sticky;
-    background-color: rgb(220, 91, 220);
+    background-color: rgb(29, 11, 29);
     width: 100%;
     height: auto;
     text-align: center;
     
 }
-.menubar ul{
-    display: inline-flex;
-    list-style: none;
+.menubar
+{
+    width: 100%;
+    margin: -1px 0vw;
+    padding: 38px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+ 
 }
 .menubar ul li{
-    width: 120px;
-    margin: 5px;
-    padding: 5px;
-   
-}
-.menubar ul li a{
-    text-decoration: none;
-    color: white;
-    
-}
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    }
+   .menubar ul li a{
+   text-decoration: none;
+   color: whitesmoke;
+   text-transform: uppercase;
+   transition: 0.5s;
 
-.menubar ul li:hover{
-    background-color: black;
+   }
+   .menubar ul li::after
+   {
+       content: '';
+       height: 4px;
+       width:0;
+       background: #088 ;
+       position: absolute;
+       left:0;
+       bottom: 0px;
+       overflow: hidden;
+       transition: 0.5s;
+   }
+   .menubar ul li:hover::after
+   {
+   width: 100%;
+   }
+   .menubar ul li a:hover{
+       color: coral;
+   }
+
+   @media  screen and (max-width:800px)
+   {
+    .menubar ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        font-weight: bolder;
+        width: 100%;
+        float: right;
+    }
+    
+    .menubar ul li:hover::after
+{
+width: 0;
 }
+   }
